@@ -1,0 +1,47 @@
+{
+ "level": "D3",
+ "stage": "P3",
+ "hash": "864ca4a01228028a",
+ "options": {
+  "A": {
+   "title": "Geared drum capstans",
+   "parts": 372,
+   "made_or_bought": 80,
+   "fasteners": 249,
+   "welds": 43,
+   "bare": [],
+   "bare_share": 0.0,
+   "interference": [],
+   "mass_kg": 196.9,
+   "step_files": 80
+  },
+  "B": {
+   "title": "Bund-walk haul",
+   "parts": 159,
+   "made_or_bought": 49,
+   "fasteners": 94,
+   "welds": 16,
+   "bare": [],
+   "bare_share": 0.0,
+   "interference": [],
+   "mass_kg": 118.3,
+   "step_files": 0
+  },
+  "C": {
+   "title": "Lever rope puller",
+   "parts": 204,
+   "made_or_bought": 56,
+   "fasteners": 138,
+   "welds": 10,
+   "bare": [],
+   "bare_share": 0.0,
+   "interference": [],
+   "mass_kg": 128.0,
+   "step_files": 0
+  }
+ },
+ "failures": [],
+ "warnings": [],
+ "passed": true,
+ "seconds": 474.1
+}

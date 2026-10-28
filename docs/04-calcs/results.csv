@@ -8,46 +8,65 @@ A5b,47.520,kg,two ballast bags filled with salt on site (model)
 A6,258.854,N,skid friction
 A7,2747.603,N,design drag on the rake with a full heap
 A8,3003.676,N,rope pull at the drum
+A9,0.577,,"rope pull if the heap and layer drag is 0.5 times the estimate, over the design pull"
+A10,1.423,,"rope pull if the heap and layer drag is 1.5 times the estimate, over the design pull"
+A11,1.845,,"rope pull if the heap and layer drag is 2 times the estimate, over the design pull"
 B1,6.000,,gear ratio (84 to 14 teeth)
 B2,110.934,mm,rope radius on the drum at the end of a 30 m pass (layer 3)
 B3,89.439,N,force on each crank handle at the design drag
 B4,4030.037,N,"rope pull with two people at 120 N, layer 3"
 B5,3684.850,N,"rope pull with two people at 120 N, layer 4 (full drum)"
-B6,0.053,m/s,rope speed at 30 crank turns a minute
-B7,84.037,W,work rate of each cranker
+B6,0.040,m/s,rope speed at 23 crank turns a minute
+B7,64.429,W,"work rate of each cranker, mean over a pass"
+B7b,71.088,W,work rate of each cranker with the rope on its third layer (end of a pass)
 B8,58.465,m,rope the drum holds in four layers
 B9,37.674,mm,flange freeboard above the fourth layer
-C1,147.347,MPa,"drum shaft, 40 mm, combined stress at 6 kN"
-C1b,2.307,,drum shaft margin to yield at 6 kN
-C2,161.465,MPa,"crank shaft, 25 mm, at the overhung pinion, 6 kN"
-C2b,2.106,,crank shaft margin to yield at 6 kN
+C1,158.785,MPa,"drum shaft, 40 mm, combined stress at 6 kN with the gear reaction"
+C1b,2.708,,drum shaft margin to yield at 6 kN (C45+QT)
+C2,95.749,MPa,"crank shaft, 30 mm at the bearing, at 6 kN"
+C2b,4.491,,crank shaft margin to yield at 6 kN (C45+QT)
+C2c,3.893,,"crank shaft margin to yield at the 25 mm step, 6 kN"
+C16,1.587,,"crank shaft fatigue safety factor at the 25 mm step, rated pull (Goodman, corroded)"
+C16b,2.625,,"crank shaft fatigue safety factor at the cheek, 30 mm, rated pull (Goodman, corroded)"
 C3,138.560,MPa,pinion tooth bending (Lewis) at 6 kN
-C3b,2.454,,pinion tooth margin to yield at 6 kN
+C3b,2.201,,pinion tooth margin to yield at 6 kN
+C3c,669.537,MPa,"pinion contact stress (Hertz) at the rated pull, application factor 1.25"
+C3d,1.494,,"pinion contact margin, induction-hardened teeth"
 C4,7827.484,N,pawl tip force at 6 kN
 C5,58.804,MPa,pawl boss bending (40 mm boss welded to the cheek) at 6 kN
 C5b,4.677,,pawl boss margin to yield (S275 tube)
 C6,247.349,deg,brake band wrap
-C7,92.442,N,hand force on the brake lever to hold the rated pull (50 mm inner arm)
+C7,134.060,N,hand force on the brake lever to hold the rated pull (50 mm inner arm)
 C8,7.650,,"rope working-load factor at the rated pull, after splices"
-C9,3259.897,N,each chain at 6 kN (two chains)
-C9b,2.393,,chain working load limit over the 6 kN chain force
+C9,4563.855,N,"more loaded chain at 6 kN, 70 % of the pull"
+C9b,2.586,,chain working load limit over the 6 kN chain force (10 mm grade 30)
 C10,7952.156,N,holding of one 150 mm helix in firm clay (estimate)
-C10b,2.439,,anchor holding over the 6 kN chain force
-C11,102.067,kg,capstan mass without anchors (model)
-C12,1.553,,capstan resistance to tipping over the rated pull
+C10b,1.742,,anchor holding over the 6 kN chain force (70 % share)
+C10c,3422.892,N,proof pull for each anchor on site (1.5 times its 70 % share of the rated pull)
+C11,107.433,kg,capstan mass without anchors (model)
+C12,1.563,,capstan resistance to tipping over the rated pull
+C12b,1.460,,capstan resistance to tipping at 6 kN
 C13,27.977,MPa,rake beam bending at 6 kN
 C13b,7.149,,rake beam margin to FRP flexural strength
 C14,11.404,mm,rake beam bow at the rated load
+C15,142.857,MPa,drum barrel hoop stress under three layers of rope wound at 6 kN
+C15b,2.170,,drum barrel margin to yield (168.3 x 6.3 YSt 310)
+C17,2.079,,"gear key and hub bearing margin at 6 kN (44 mm hub, C45+QT)"
+C18,2.145,,"ratchet key and hub bearing margin at 6 kN (64 mm, C45+N)"
+C19,3.892,,"roller axle margin at 6 kN (316, yield 205 MPa)"
 D1,10.652,kPa,skid pressure on the floor with ballast
 D2,10.000,mm,"blade edge above the floor, set by the skids"
-D3,5.909,m,"blade distance from the bund toe where the rope starts to lift the rake, without ballast"
-D4,3.297,m,"blade distance from the bund toe where the rope starts to lift the rake, with ballast"
-D5,9.498,min,winding a 30 m pass
+D3,6.359,m,"blade distance from the bund toe where the rope starts to lift the rake, without ballast"
+D4,3.497,m,"blade distance from the bund toe where the rope starts to lift the rake, with ballast"
+D13,9.815,,"rake resistance to pitching nose-down over the pitching moment, full heap"
+D5,12.388,min,winding a 30 m pass
 D6,5.699,min,winding the empty rake back
-D7,23.197,min,"one strip: pull, return and move 3 m"
-D8,598.435,kg/h,salt gathered to the windrow per hour (one full heap per strip)
-D9,149.609,kg per worker-hour,"gathering rate per worker, crew of four"
+D7,26.087,min,"one strip: pull, return and move 3 m"
+D8,532.124,kg/h,salt gathered to the windrow per hour (one full heap per strip)
+D9,133.031,kg per worker-hour,"gathering rate per worker, crew of four"
 D10,19.000,min,set-up time per crew (two crews work at once)
+D11,194.757,t,salt one set gathers in a 61-day harvest at 6 h a day
+D12,0.354,,share of a 550 t family pan output one set gathers in the harvest
 E1,23.760,kg,heaviest single part (Ballast bags (2))
-E2,2803.000,USD,estimated parts cost of the full set (bom/bom.csv)
-E3,-1197.000,USD,"over (+) or under (-) the value-engineering target of USD 4,000"
+E2,2897.000,USD,estimated parts cost of the full set (bom/bom.csv)
+E3,-1103.000,USD,"over (+) or under (-) the value-engineering target of USD 4,000"

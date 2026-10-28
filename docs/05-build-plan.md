@@ -3,9 +3,9 @@ doc_id: SDG-BLD-001
 title: SaltDrag prototype build plan
 project: SaltDrag
 doc_type: Build plan
-version: "0.1"
+version: "0.2"
 status: Draft
-date: '2026-10-03'
+date: '2026-10-24'
 author: Amish Chadha
 license: CERN-OHL-S-2.0
 revisions:
@@ -13,6 +13,10 @@ revisions:
   date: '2026-10-03'
   author: Amish Chadha
   change: First build plan; design made constructable (SDG-DDR-002)
+- version: "0.2"
+  date: '2026-10-24'
+  author: Amish Chadha
+  change: Kit 1.9.1 upgrade; fixes from the STEM check and its review built in (SDG-DEC-001 D17 to D24), namely drum barrel 6.3 mm YSt 310 and C45+QT shafts, ratchet and gear hubs, stepped crank shaft in 30 mm bearings, 100 x 80 cross-tube end plates, guard spacers moved, 600 mm brake lever, 272 mm roller axle with split pins, low bridle eyes, 10 mm chains and rated turnbuckles, anchor proof pull 3.42 kN; pictures regenerated from the detailed model
 ---
 
 # SaltDrag prototype build plan
@@ -25,7 +29,7 @@ revisions:
 
 *Figure 1. Every component pulled apart and numbered in build order. One capstan, one bund roller and one rope are shown; the set has two of each.*
 
-The prototype is one SaltDrag set: two identical hand capstans, two bund rollers, two 45 m pull ropes and one 3 m rake. Each capstan is a pair of galvanised steel side frames bolted together by three cross tubes, carrying a welded drum, a gear pair, a ratchet and pawl, a band brake, a gear guard and two crank handles, and held to the ground by two chains and screw-in anchors. The rake is a green FRP box beam with a white plastic blade bolted to its front, three plastic skids, stainless end caps for the bridles and two salt-filled ballast bags. Figure 1 shows the 20 kinds of component in the order you make or fit them. Thirteen are made in a town workshop: the side frames, cross tubes, drum, crank shaft, crank handles, ratchet and pawl, brake, gear guard, roller saddle, and the drilled beam, blade, skids and end caps. The gears, bearings, anchors, chains, ropes, bridles, fasteners and bags are bought. The work is cutting, drilling and welding steel plate and tube, some lathe work on the drum, galvanising, and drilling plastic and FRP. The parts cost about USD 2,803 for the whole set, from the bill of materials.
+The prototype is one SaltDrag set: two identical hand capstans, two bund rollers, two 45 m pull ropes and one 3 m rake. Each capstan is a pair of galvanised steel side frames bolted together by three cross tubes, carrying a welded drum, a gear pair, a ratchet and pawl, a band brake, a gear guard and two crank handles, and held to the ground by two chains and screw-in anchors. The rake is a green FRP box beam with a white plastic blade bolted to its front, three plastic skids, stainless end caps for the bridles and two salt-filled ballast bags. Figure 1 shows the 20 kinds of component in the order you make or fit them. Thirteen are made in a town workshop: the side frames, cross tubes, drum, crank shaft, crank handles, ratchet and pawl, brake, gear guard, roller saddle, and the drilled beam, blade, skids and end caps. The gears, bearings, anchors, chains, ropes, bridles, fasteners and bags are bought. The work is cutting, drilling and welding steel plate and tube, some lathe work on the drum, galvanising, and drilling plastic and FRP. The parts cost about USD 2,897 for the whole set, from the bill of materials.
 
 > **Safety:** This is rope and lifting-class equipment. A loaded rope can whip back if it breaks or slips, cranks and gears can trap hands, and a ground anchor can pull out. Do not load any part until section 6 says so. Welding and galvanised steel give off fumes: weld only bare steel and galvanise afterwards, in a ventilated space. Drilling FRP makes glass dust: wear a dust mask and gloves. Parts weigh up to 24 kg: lift in pairs.
 
@@ -41,11 +45,11 @@ The concept showed what SaltDrag does; it did not say how any part is made or fi
 | Capstan position | Staked on the bund | On dry ground behind the bund, with a roller saddle on the crest (Steps 16 and 17) | The crest is too narrow to crank on; the roller keeps the rope off the bund |
 | Drum | A drum | Welded pipe barrel and flanges, brake rim, shaft welded through (Figure 5) | Holds 58 m of rope; carries the brake |
 | Ratchet and pawl | A pawl | The pawl on a 40 mm boss welded to the cheek (Figure 12) | A plain pin would bend at twice the rated pull |
-| Brake | A brake | A lined band round the brake rim, worked by a lever through the cheek (Figure 14) | Holds the rated pull with about 92 N on the lever |
+| Brake | A brake | A lined band round the brake rim, worked by a lever through the cheek (Figure 14) | Holds the rated pull with about 134 N on the 600 mm lever, even with a wet lining |
 | Anchoring | Screw or plate anchors | An ear on each cheek at rope height, shackle, chain and turnbuckle to a screw-in anchor (Figure 3) | The capstan cannot tip |
 | Rake | Bolted sections | One 3 m FRP beam, blade bolted on with crush sleeves, skids on slotted hangers, end caps with eye plates (Figures 18 to 24) | Light, rust-free, and the bridles pull on parts made for the load |
 | Ballast | None | Two salt-filled bags on the beam (Step 18) | Keeps the blade down as the rope steepens near the bund |
-| Windrow board | A board at the bund edge | Removed | The rake lifts about 3.3 m from the bund toe, so the windrow forms there |
+| Windrow board | A board at the bund edge | Removed | The rake lifts about 3.5 m from the bund toe, so the windrow forms there |
 
 ## 3. Making the components
 
@@ -64,10 +68,10 @@ Make and check each component before the assembly step that needs it. Sizes are 
 1. Cut the cheek from 6 mm plate: a trapezoid 660 wide at the base, 220 wide at the top and 860 tall, with the ear at the rear (a tab 70 tall ending in a 35 mm radius, centred 230 behind the drum centre line and 650 above the ground).
 2. Mark the drum centre line square to the base. All hole positions are measured ahead or behind this line and up from the ground (the base edge of the cheek is 40 up).
 3. Drill the 60 mm drum hole at 560 up and the 40 mm crank shaft hole at 756 up, both on the centre line.
-4. Drill the bearing bolt holes: four 14 mm holes on a 102 mm square round the drum hole, four 12 mm holes on a 70 mm square round the crank shaft hole.
+4. Drill the bearing bolt holes: four 14 mm holes on a 102 mm square round the drum hole, four 12 mm holes on an 83 mm square round the crank shaft hole.
 5. Drill the cross tube bolt holes: pairs of 11 mm holes 50 apart, at 240 ahead and 110 up, 240 behind and 110 up, and on the centre line at 850 up.
 6. Drill the 22 mm hole in the ear, the 25 mm pawl bolt hole at 130 behind and 690 up, and the 21 mm brake pivot hole at 200 behind and 330 up. Drill these in all four frames, so any frame can be used either side.
-7. Drill three 9 mm holes for the gear guard spacers, 190 from the drum hole centre: ahead, behind and below it (right frames only).
+7. Drill three 9 mm holes for the gear guard spacers (right frames only): 150 ahead and 120 below the drum hole centre, 150 behind and 120 below it, and 190 straight below it.
 8. Cut the runner 900 long; it extends 400 ahead of and 500 behind the drum centre line. Weld the cheek on the runner's centre line, fillet welds both sides.
 9. Left frames: weld a 40 mm OD, 24 mm bore tube 52 long on the outside face over the pawl hole, square to the plate.
 10. Deburr, then hot-dip galvanise. Run a drill through the bolt holes afterwards.
@@ -90,12 +94,12 @@ Make and check each component before the assembly step that needs it. Sizes are 
 
 *Figure 4. Cross tube making sketch (SDG-DWG-102).*
 
-**What it is and what it is made from.** Three per capstan, all the same: square hollow section 40 x 40 x 3 mm with an 80 x 80 x 6 mm end plate welded on each end.
+**What it is and what it is made from.** Three per capstan, all the same: square hollow section 40 x 40 x 3 mm with a 100 x 80 x 6 mm end plate welded on each end.
 
 **How to make it.**
 
-1. Cut the tube 382 long, ends square.
-2. Cut two 80 x 80 mm plates and drill two 11 mm holes in each, 25 each side of the centre.
+1. Cut the tube 388 long, ends square.
+2. Cut two 100 x 80 mm plates and drill two 11 mm holes in each, on the long centre line, 36 each side of the centre (so the washers clear the welds).
 3. Weld a plate on each end, centred, so the length over both plates is 394. Weld all round and grind flush on the outer faces.
 4. Galvanise, then run a drill through the holes.
 
@@ -109,19 +113,19 @@ Make and check each component before the assembly step that needs it. Sizes are 
 
 *Figure 5. Drum making sketch (SDG-DWG-103).*
 
-**What it is and what it is made from.** The drum stores the pull rope. A barrel of steel pipe 168.3 x 4.5 mm, 280 long; two flanges of 6 mm plate, 330 diameter; a brake rim of 50 x 6 mm flat bar on the left flange; and a 40 mm C45 (EN8) bright steel shaft, 592 long, welded right through.
+**What it is and what it is made from.** The drum stores the pull rope. A barrel of 168.3 x 6.3 mm YSt 310 (IS 4923) or S355J2H circular hollow section, 280 long; two flanges of 6 mm plate, 330 diameter; a brake rim of 50 x 6 mm flat bar on the left flange; and a 40 mm C45+QT (quenched and tempered) bright steel shaft, 618 long, welded right through. The thicker barrel resists the pressure of the rope wound on under load (SDG-DEC-001 D18).
 
 **How to make it.**
 
 1. Cut the barrel 280 long, ends square. Cut two 330 mm discs from 6 mm plate with a 40.5 mm centre hole.
 2. Drill a 14 mm rope hole in the right flange, 94 above the centre (just outside the barrel).
 3. Roll the 50 x 6 flat bar to a ring 330 outside diameter, butt weld it, and weld it to the outside face of the left flange, flush with its edge.
-4. Slide both flanges and the barrel onto the shaft. The right flange's outer face is 185 right of the shaft's middle; the left flange's outer face is 107 left of it. Tack, check square, then weld the flanges to the barrel all round and to the shaft.
-5. Cut a 12 mm keyway 40 long at each shaft end, for the gear (right) and the ratchet wheel (left).
+4. Slide both flanges and the barrel onto the shaft. The shaft's right end is 296 right of the drum's middle and its left end 322 left of it; the right flange's outer face is 185 right of the drum's middle and the left flange's outer face 107 left of it. Tack, check square, then weld the flanges to the barrel all round and to the shaft.
+5. Cut a 12 mm keyway 44 long at the right end for the gear's hub, and 64 long at the left end for the ratchet wheel and its hub.
 6. Turn the brake rim true on the shaft in a lathe (within 0.5 mm).
 7. Galvanise the barrel and flanges with the shaft ends masked; grease the shaft ends.
 
-**How it fits the parts next to it.** The shaft runs in a 40 mm flange bearing on each cheek; the right flange stands 15 clear of the right cheek and the brake rim 43 clear of the left one. The gear is keyed on the right shaft end, 10 clear of the bearing (Figure 6).
+**How it fits the parts next to it.** The shaft runs in a 40 mm flange bearing on each cheek; the right flange stands 15 clear of the right cheek and the brake rim 43 clear of the left one. The gear's 44 mm hub is keyed on the right shaft end, 5 clear of the bearing (Figure 6).
 
 ![Figure 6. Joint 2: drum shaft, bearing, cheek and gear](05-build-plan/joint-02.png)
 
@@ -135,16 +139,16 @@ Make and check each component before the assembly step that needs it. Sizes are 
 
 *Figure 7. Crank shaft with pinion making sketch (SDG-DWG-104).*
 
-**What it is and what it is made from.** C45 bright steel bar 25 mm, 690 long, with a bought pinion: module 4, 14 teeth, 35 mm face, bored 25 mm.
+**What it is and what it is made from.** C45+QT steel bar 32 mm, turned to 30 mm between two steps 490 apart and to 25 mm outboard of them, 690 long, with a bought pinion: module 4, 14 teeth, 35 mm face, induction-hardened teeth, bored 25 mm. The 30 mm middle runs in the bearings; the 25 mm ends carry the pinion and the crank hubs (SDG-DEC-001 D24).
 
 **How to make it.**
 
-1. Cut the bar 690 long and chamfer the ends.
+1. Cut the bar 690 long, turn the middle 490 to 30 mm and both ends to 25 mm with 1.5 mm fillets at the steps, and chamfer the ends.
 2. Cut an 8 mm keyway 40 long, from 253 to 289 right of the bar's middle.
 3. Drill 8 mm cross holes 20 in from each end, for the crank pins.
 4. Key the pinion on and lock its set screw once it is in place (Step 6).
 
-**How it fits the parts next to it.** The shaft runs in two 25 mm flange bearings, 756 up and 196 above the drum centre. The pinion sits outside the right bearing and meshes the gear inside the guard (Figure 8).
+**How it fits the parts next to it.** The shaft runs in two 30 mm flange bearings, 756 up and 196 above the drum centre. The pinion sits outside the right bearing and meshes the gear inside the guard (Figure 8).
 
 ![Figure 8. Joint 3: gear and pinion in mesh](05-build-plan/joint-03.png)
 
@@ -168,7 +172,7 @@ Make and check each component before the assembly step that needs it. Sizes are 
 4. Weld the 16 mm pin to the arm's free end, slide on the 120 mm grip tube and a washer, and fit a split pin.
 5. Galvanise; grease the grip pin.
 
-**How it fits the parts next to it.** The hub slides onto the crank shaft end and is held by an 8 mm cross pin and R-clip through hub and shaft (Figure 10). The two handles on a capstan sit 180 degrees apart.
+**How it fits the parts next to it.** The hub slides onto the crank shaft end and is held by an 8 mm cross pin and split pin through hub and shaft (Figure 10). The two handles on a capstan sit 180 degrees apart.
 
 ![Figure 10. Joint 6: crank hub on the shaft end](05-build-plan/joint-06.png)
 
@@ -187,11 +191,11 @@ Make and check each component before the assembly step that needs it. Sizes are 
 **How to make it.**
 
 1. Cut the wheel 200 diameter with 20 teeth: each tooth rises 14 mm along the circle and drops straight back to the root.
-2. Bore it 40 mm with a 12 mm keyway; drill and tap a set screw hole.
+2. Weld a hub, 70 mm round bar 44 long, centred on the wheel's outer face (fillet all round), then bore wheel and hub together 40 mm with a 12 mm keyway; drill and tap a set screw hole in the hub.
 3. Cut the pawl: a 40 mm round end with a 25 mm hole, tapering to an 8 mm tip; harden the tip.
 4. Drill a 6 mm hole near the pawl's tip end for the spring.
 
-**How it fits the parts next to it.** The wheel is keyed on the left drum shaft end, 10 clear of the bearing. The pawl turns on the M24 bolt through its hole, the boss and the cheek, with a nyloc nut inside; its tip drops onto the face of a tooth (Figure 12). The spring runs from the pawl to a 6 mm hole in the ear.
+**How it fits the parts next to it.** The wheel is keyed on the left drum shaft end, 10 clear of the bearing, its hub outboard and 15 clear of the left crank's arm. The pawl turns on the M24 bolt through its hole, the boss and the cheek, with a nyloc nut inside; its tip drops onto the face of a tooth (Figure 12). The spring runs from the pawl to a 6 mm hole in the ear.
 
 ![Figure 12. Joint 4: pawl seated on a ratchet tooth](05-build-plan/joint-04.png)
 
@@ -205,7 +209,7 @@ Make and check each component before the assembly step that needs it. Sizes are 
 
 *Figure 13. Brake band and lever making sketch (SDG-DWG-107).*
 
-**What it is and what it is made from.** A steel strip 40 x 3 mm lined with 5 mm woven brake lining; two end links of 10 mm bar; a 20 mm pivot shaft with a short inner arm and a 450 mm lever of 25 mm bar outside.
+**What it is and what it is made from.** A steel strip 40 x 3 mm lined with 5 mm woven brake lining; two end links of 10 mm bar; a 20 mm pivot shaft with a short inner arm and a 600 mm lever of 25 mm bar outside. Keep the lining dry and free of grease.
 
 **How to make it.**
 
@@ -233,7 +237,7 @@ Make and check each component before the assembly step that needs it. Sizes are 
 
 1. Cut the face to the outline: a 400 mm circle round the gear centre joined by straight sides to a 100 mm circle round the crank shaft centre, 196 above. Cut a 32 mm hole for the crank shaft.
 2. Roll a 50 mm wide strip and weld it round the face edge, making a cup 50 deep.
-3. Weld three bolt bushes inside the rim at the spacer positions (190 from the gear centre, ahead, behind and below).
+3. Weld three bolt bushes inside the cup at the spacer positions: 150 ahead and 120 below the gear centre, 150 behind and 120 below it, and 190 straight below it.
 4. Cut the spacers 44 long. Paint the guard yellow.
 
 **How it fits the parts next to it.** The guard bolts to the right cheek through the spacers, its open side toward the cheek; it stands 11 clear of the gear teeth and 3.5 round the crank shaft.
@@ -246,7 +250,7 @@ Make and check each component before the assembly step that needs it. Sizes are 
 
 *Figure 16. Bund roller saddle making sketch (SDG-DWG-109).*
 
-**What it is and what it is made from.** Two galvanised side plates of 6 mm steel on foot plates, tied by two 20 mm bars, carrying a UHMW-PE roller 100 diameter and 200 long with two 160 mm flanges on a 25 mm stainless axle.
+**What it is and what it is made from.** Two galvanised side plates of 6 mm steel on foot plates, tied by two 20 mm bars, carrying a UHMW-PE roller 100 diameter and 200 long with two 160 mm flanges on a 25 mm stainless axle 272 long.
 
 **How to make it.**
 
@@ -254,7 +258,7 @@ Make and check each component before the assembly step that needs it. Sizes are 
 2. Weld each plate on an 80 x 6 mm foot plate 300 long.
 3. Weld the two tie bars between the side plates, 120 ahead and behind the axle and 40 up, so the plates are 236 apart (centres). Galvanise.
 4. Bore the roller 26 mm; fit the two flanges on its ends.
-5. Cut the axle 260 long and drill 8 mm R-clip holes 8 from each end.
+5. Cut the axle 272 long and drill 6.6 mm split pin holes 6 from each end, so the pins sit clear of the side plates.
 
 **How it fits the parts next to it.** The roller turns on the axle between the side plates with 5 mm each side (Figure 17). The saddle sits astride the bund crest; the rope runs over the roller top, 150 above the crest.
 
@@ -342,7 +346,7 @@ Make and check each component before the assembly step that needs it. Sizes are 
 1. Fold the channel: top and bottom 126 long by 106 wide, rear 112 tall, inside width 100 so it slides on the beam; the front stays open for the blade.
 2. Weld the end plate (121 x 112) across the end, reaching forward over the blade end.
 3. Drill two 13 mm holes through top and bottom, 40 and 80 from the end plate.
-4. Cut the eye plate 225 long front to back, standing 50 out from the end plate, with two 18 mm eyes 175 apart, the front eye 25 ahead of the blade face. Weld it to the end plate on both sides.
+4. Cut the eye plate 225 long front to back, standing 50 out from the end plate, with two 18 mm eyes 175 apart, the front eye 25 ahead of the blade face. Weld it to the end plate on both sides at the foot of the plate, its centre 66 above the floor (6 above the beam's underside), so the bridles pull low and the rake cannot pitch onto its blade (SDG-DEC-001 D23).
 
 **How it fits the parts next to it.** The cap slides over the beam end, two M12 bolts with crush sleeves through cap and beam. The front eye takes the pull bridle and the rear eye the return bridle, each with a bow shackle (Figure 24).
 
@@ -355,9 +359,9 @@ Make and check each component before the assembly step that needs it. Sizes are 
 ### 3.14 Bought components
 
 - **Spur gear (2):** module 4, 84 teeth, 30 mm face, C45, webbed; ordered bored 40 mm with a 12 mm keyway and set screw.
-- **Flange bearings (8):** four-bolt, stainless insert in a thermoplastic housing; four 40 mm bore (102 mm bolt square), four 25 mm bore (70 mm bolt square).
+- **Flange bearings (8):** four-bolt, stainless insert in a thermoplastic housing; four 40 mm bore (102 mm bolt square, UCF208 size), four 30 mm bore (83 mm bolt square, UCF206 size).
 - **Ground anchors (4):** helical, 20 mm rod 1.0 m long, one 150 mm helix, forged eye, galvanised.
-- **Chains and turnbuckles (4 sets):** 8 mm grade 30 galvanised chain 1.4 m, M16 hook-and-eye turnbuckle, two 10 mm bow shackles each. Working load limits at least 7.8 kN (chain), 6 kN (turnbuckle).
+- **Chains and turnbuckles (4 sets):** 10 mm grade 30 galvanised chain 1.4 m, forged jaw-and-eye turnbuckle, two 10 mm bow shackles each. Working load limits at least 11.8 kN (chain), 9.2 kN (turnbuckle, 1 t) and 9.8 kN (shackles). Hook turnbuckles and unrated hardware-store turnbuckles are not acceptable.
 - **Pull ropes (2):** 12 mm polyester double braid, 45 m, minimum breaking strength at least 25 kN, with a certificate; eye splice and thimble at the rake end, plain whipped end at the drum.
 - **Bridles (2):** two 12 mm polyester legs about 2.5 m with spliced thimble eyes to a 1 t swivel; three 10 mm bow shackles each.
 - **Fasteners:** stainless 316 M10 and M12 bolts, nyloc nuts, washers and 16 x 2 mm crush sleeves for the rake; galvanised M10, M12 and M8 bolts for the capstans.
@@ -389,19 +393,19 @@ Over the right shaft end and onto the three tube plates; bolt all six plates and
 
 ![Step 4](05-build-plan/step-04.png)
 
-Slide a 40 mm bearing onto each shaft end, four M12 bolts into the cheek each. Turn the drum, then tighten the set screws.
+Slide a 40 mm bearing onto each shaft end, four M12 bolts into the cheek each, put in from inside the frame with their heads against the cheek's inner face, so no bolt end reaches a drum flange. Turn the drum, then tighten the set screws.
 
 ### Step 5: ratchet wheel and gear
 
 ![Step 5](05-build-plan/step-05.png)
 
-Key the ratchet wheel onto the left shaft end and the gear onto the right, each 10 clear of its bearing; tighten the set screws.
+Key the ratchet wheel (hub outboard) onto the left shaft end, 10 clear of its bearing, and the gear's hub onto the right, 5 clear of its bearing; tighten the set screws.
 
 ### Step 6: crank shaft, its bearings and the pinion
 
 ![Step 6](05-build-plan/step-06.png)
 
-Bolt the two 25 mm bearings to the cheeks, slide the crank shaft in from the right, key the pinion on in line with the gear and lock it. Grease the mesh.
+Bolt the two 30 mm bearings to the cheeks (M10 bolts, heads inside), slide the crank shaft in from the right until its steps sit just outside both bearings, key the pinion on in line with the gear and lock it. Grease the mesh.
 
 ### Step 7: pawl
 
@@ -427,7 +431,7 @@ Three spacers and M8 bolts into the right cheek.
 
 ![Step 10](05-build-plan/step-10.png)
 
-Handles 180 degrees apart; cross pin and R-clip each.
+Handles 180 degrees apart; cross pin and split pin each.
 
 ### Step 11: rope onto the drum
 
@@ -457,13 +461,13 @@ Slide the caps on the beam ends, two M12 bolts each. Shackle the pull bridle leg
 
 ![Step 15](05-build-plan/step-15.png)
 
-Hold the roller between the side plates, push the axle through, fit both R-clips.
+Hold the roller between the side plates, push the axle through, fit both split pins.
 
 ### Step 16: capstan behind the bund and anchored
 
 ![Step 16](05-build-plan/step-16.png)
 
-Stand the capstan on firm, level ground with its drum 1.5 m behind the bund crest centre and square to the strip to be raked. Screw the two anchors in 1.7 m behind the drum, in line with the chains, until only the eye shows. Shackle the chains to the ears and take up the slack with the turnbuckles.
+Stand the capstan on firm, level ground with its drum 1.5 m behind the bund crest centre and square to the strip to be raked. Screw the two anchors in 1.7 m behind the drum, in line with the chains, until only the eye shows. Shackle the chains to the ears and take up the slack with the turnbuckles until both chains are equally tight; one slack chain lets the capstan yaw and tip.
 
 ### Step 17: roller on the crest and rope to the rake
 
@@ -487,9 +491,9 @@ These are the checks a TRL 4 test report would record; this plan only lists them
 | --- | --- | --- | --- |
 | Gear mesh and free running | R2 | Turn each capstan by hand with no rope load | Smooth; backlash 0.2 to 0.5 mm; no rubbing on the guard |
 | Pawl holds | R11 | Wind in, let go of the cranks under a 0.5 kN load from a spring scale | The pawl catches within one tooth; nothing moves |
-| Brake holds and pays out | R11 | Cranks removed, pawl lifted, 3 kN load from CalRig | The brake holds with 150 N or less on the lever and pays out smoothly as it is eased |
+| Brake holds and pays out | R11 | Cranks removed, pawl lifted, 3 kN load from CalRig | The brake holds with 150 N or less on the lever, also with the lining wetted, and pays out smoothly as it is eased |
 | Proof load | R3, R10 | CalRig in line with the rope, anchored capstan, load to 4.5 kN (1.5 times rated) and hold 2 min | No permanent set in shafts, frames, ears or bolts; rope and splices undamaged |
-| Anchors on site | R11 | Pull each anchor in line with its chain to 2.25 kN (1.5 times its share of the rated pull) | It moves less than 25 mm and holds for 2 min |
+| Anchors on site | R11 | Pull each anchor in line with its chain to 3.42 kN (1.5 times a 70 % share of the rated pull) | It moves less than 25 mm and holds for 2 min |
 | Crank force | R2 | Spring scale on a handle while two people wind the rake with a full heap | 120 N or less at each handle |
 | Blade height | R4 | Rake on a flat floor | 10 mm under the blade along its length |
 | Rope stored | R12 | Wind on the full 45 m | Four even layers or fewer; at least 24 mm of flange left |

@@ -113,7 +113,9 @@ def overview():
 # ----------------------------------------------------------------- making sketches
 def sheets():
     out = []
-    base = dict(project="SaltDrag", date=DATE)
+    base = dict(project="SaltDrag", date="2026-10-24", rev="P2",
+                revisions=[("P1", "First making sketch (SDG-DDR-002)", DATE, "AC"),
+                           ("P2", "SDG-DEC-001 D17 to D24: STEM check fixes, kit 1.9.1", "2026-10-24", "AC")])
     fl = CAP["frame_l"].shape
     fr = CAP["frame_r"].shape
     # 101 side frame (left frame shown: it carries the pawl boss)
@@ -128,9 +130,11 @@ def sheets():
                "Ear at the rear: 70 mm tall, round end R35, 22 mm hole 230 behind",
                "  the drum centre line and 650 mm above the ground.",
                "Drum hole 60 mm at 560 mm up; crank shaft hole 40 mm at 756 mm up.",
-               "Bearing bolts: 14 mm holes on a 102 square (drum), 12 mm on a 70",
+               "Bearing bolts: 14 mm holes on a 102 square (drum), 12 mm on an 83",
                "  square (crank shaft), centred on each hole.",
-               "Cross tube bolts: 11 mm pairs 50 apart at the three tube positions.",
+               "Cross tube bolts: 11 mm pairs 72 apart at the three tube positions.",
+               "Right frames: three 9 mm guard spacer holes, 150 ahead and behind",
+               "  and 120 below the drum centre, and 190 below it.",
                "Pawl bolt 25 mm at 130 back, 690 up; brake pivot 21 mm at 200 back,",
                "  330 up. Drill both in all four frames.",
                "Runner: SHS 40 x 40 x 3, 900 long, 400 ahead of and 500 behind the",
@@ -146,53 +150,55 @@ def sheets():
         material="SHS 40 x 40 x 3 mm and plate 6 mm, S275; hot-dip galvanised",
         view_shape=t, inset_view=(22, -40),
         notes=["Make 6: three per capstan, all the same.",
-               "Tube: SHS 40 x 40 x 3 mm, 382 mm long, ends square.",
-               "End plates: 80 x 80 x 6 mm, two per tube, welded on centre so",
-               "  the length over both plates is 394 mm (the gap between cheeks).",
-               "Two 11 mm holes in each plate, 25 mm each side of the tube centre,",
-               "  on the horizontal centre line.",
-               "Weld all round; grind the weld flush on the outer faces.",
+               "Tube: SHS 40 x 40 x 3 mm, 388 mm long, ends square.",
+               "End plates: 100 x 80 x 6 mm, two per tube, welded on centre so",
+               "  the length over both plates is 400 mm (the gap between cheeks).",
+               "Two 11 mm holes in each plate, 36 mm each side of the tube centre,",
+               "  on the long centre line, so the washers clear the welds.",
+               "Weld all round, 5 mm fillet; keep the outer faces flat.",
                "Galvanise; run a drill through the holes after galvanising.",
                "Fit: plates sit flat on the inner faces of the cheeks, two",
                "  M10 bolts each end. Positions: front low (240 ahead, 110 up),",
                "  rear low (240 behind, 110 up) and top (over the drum, 850 up).",
-               "Check: 394 mm over the plates, within 1 mm, plates parallel."], **base))
+               "Check: 400 mm over the plates, within 1 mm, plates parallel."], **base))
     # 103 drum
     dr = CAP["drum"].shape
     out.append(bv.component_sheet(
         Part("Drum", dr, COL["drum"]), [Part("x", fl, ""), Part("x", fr, ""), Part("x", CAP["bearings"].shape, "")],
         dwg_no="SDG-DWG-103", title="SaltDrag capstan drum (make 2): making sketch",
-        material="Pipe 168.3 x 4.5 mm, plate 6 mm, flat bar 50 x 6 mm, C45 bar 40 mm",
+        material="Tube 168.3 x 6.3 mm YSt 310, plate 6 mm, flat bar 50 x 6 mm, C45+QT bar 40 mm",
         view_shape=dr, inset_view=(22, -40),
-        notes=["Make 2. Barrel: pipe 168.3 OD x 4.5 wall, 280 long, ends square.",
+        notes=["Make 2. Barrel: tube 168.3 OD x 6.3 wall, YSt 310, 280 long.",
                "Flanges: two discs 330 OD, 6 mm plate, 40.5 mm centre hole.",
                "Rope hole: 14 mm in the right flange, 94 mm above the centre.",
                "Brake rim: 50 x 6 flat bar rolled to 330 OD, butt welded, welded",
                "  to the outside face of the left flange, flush with its edge.",
-               "Shaft: C45 (EN8) bright bar 40 mm, 592 long. The right flange's",
-               "  outer face is 185 mm right of the shaft centre (its middle).",
+               "Shaft: C45+QT bar 40 mm, 618 long, ends 296 right and 322 left",
+               "  of the drum middle; right flange outer face 185 right of it.",
                "Weld flanges to barrel all round; weld shaft to both flanges.",
-               "Keyways 12 mm wide, 40 long at both ends for the gear and ratchet.",
+               "Keyways 12 mm wide: 44 long (gear hub), 64 long (ratchet and hub).",
                "Turn the brake rim true on the shaft after welding (0.5 mm).",
                "Galvanise barrel and flanges; mask and grease the shaft ends.",
                "Fit: the shaft runs in the 40 mm flange bearings; 15 mm gap to",
-               "  the right cheek, 43 mm to the left. Mass about 21 kg.",
+               "  the right cheek, 43 mm to the left. Mass about 23.5 kg.",
                "Check: spin it on the shaft; the rim runs true within 0.5 mm."], **base))
     # 104 crank shaft and pinion
     ps = CAP["pinion"].shape
     out.append(bv.component_sheet(
         Part("Crank shaft", ps, COL["pinion"]), [Part("x", fl, ""), Part("x", fr, ""), Part("x", CAP["gear"].shape, "")],
         dwg_no="SDG-DWG-104", title="SaltDrag crank shaft with pinion (make 2): making sketch",
-        material="C45 (EN8) bright bar 25 mm; bought pinion, module 4, 14 teeth",
+        material="C45+QT bar 32 mm, turned 30 and 25 mm; bought pinion, module 4, 14 teeth",
         view_shape=ps, inset_view=(22, -40),
-        notes=["Make 2. Shaft: C45 bright bar 25 mm, 690 long, ends chamfered.",
+        notes=["Make 2. Shaft: C45+QT, 690 long; 30 mm for 490 in the middle,",
+               "  25 mm outboard, 1.5 mm fillets at the steps; ends chamfered.",
                "Keyway 8 mm wide, 40 long, for the pinion, from 253 to 289 mm",
                "  right of the shaft middle.",
                "Cross-pin holes 8 mm through, 20 mm in from each end, for the",
                "  crank hub pins.",
-               "Pinion: bought, module 4, 14 teeth, 35 face, bored 25, keyed and",
+               "Pinion: bought, module 4, 14 teeth, 35 face, teeth induction-",
+               "  hardened, bored 25, keyed and",
                "  held by a set screw. Its teeth line up with the gear's face.",
-               "Fit: the shaft runs in two 25 mm flange bearings on the cheeks,",
+               "Fit: the shaft runs in two 30 mm flange bearings on the cheeks,",
                "  756 mm above the ground and 196 mm above the drum centre.",
                "The pinion sits outside the right bearing, inside the guard.",
                "Check: the shaft turns by hand in its bearings with the pinion",
@@ -214,7 +220,7 @@ def sheets():
                "On the capstan the two handles sit 180 deg apart, so one person",
                "  pushes while the other pulls.",
                "Galvanise; grease the grip pin.",
-               "Fit: hub against the shaft shoulder; cross pin and R-clip hold it.",
+               "Fit: hub on the 25 mm shaft end; cross pin and split pin hold it.",
                "  Handles come off before any paying out under load.",
                "Check: the grip spins freely; the hub cannot slide off with the pin in."], **base))
     # 106 ratchet wheel and pawl
@@ -222,11 +228,12 @@ def sheets():
     out.append(bv.component_sheet(
         Part("Ratchet and pawl", rw, COL["ratchet"]), [Part("x", fl, ""), Part("x", CAP["drum"].shape, ""), Part("x", BRG_L, "")],
         dwg_no="SDG-DWG-106", title="SaltDrag ratchet wheel and pawl (make 2 sets): making sketch",
-        material="C45 plate 20 mm (wheel) and 16 mm (pawl), laser or flame cut",
+        material="C45 plate 20 mm (wheel) and 16 mm (pawl), laser or flame cut; 70 mm bar hub",
         view_shape=rw, inset_view=(18, -130),
         notes=["Wheel: 200 OD, 20 teeth, 20 mm C45 plate. Each tooth rises",
                "  14 mm along the circle and drops straight back to the root.",
-               "Bore 40 with a 12 mm keyway; set screw M10 in the hub side.",
+               "Hub: 70 mm bar, 44 long, welded on the outer face; bore wheel and",
+               "  hub 40 with a 12 mm keyway 64 long; set screw M10 in the hub.",
                "Pawl: 16 mm C45 plate, 25 wide at the pivot (40 OD round end),",
                "  8 wide at the tip; 25 mm pivot hole; harden the tip.",
                "Pivot: M24 bolt through the pawl, the 40 mm boss and the cheek,",
@@ -252,9 +259,9 @@ def sheets():
                "  pin; the lower end goes to the inner arm, 50 mm from the pivot.",
                "Pivot: 20 mm shaft through a 21 mm hole in the left cheek, 200",
                "  behind and 330 above the ground. Inner arm inside, lever outside.",
-               "Lever: 25 mm bar, 450 long, rising at 62 deg toward the rear; grip",
+               "Lever: 25 mm bar, 600 long, rising at 62 deg toward the rear; grip",
                "  at the top. Lifting the lever tightens the band.",
-               "A 92 N pull on the grip holds the rated 3 kN rope pull (estimate).",
+               "134 N on the grip holds the rated 3 kN pull with a wet lining.",
                "Fit: lining 2 to 3 mm off the rim when the lever is down.",
                "Check: lever up, the drum cannot be turned by hand at the rim."], **base))
     # 108 gear guard
@@ -270,7 +277,8 @@ def sheets():
                "Rim: 2 mm strip 50 wide, rolled and welded round the face edge,",
                "  so the guard is a cup 50 deep, open toward the cheek.",
                "Spacers: three 14 OD tubes 44 long between the cheek and the cup",
-               "  edge, at the front, rear and bottom, 190 from the gear centre.",
+               "  edge: 150 ahead and behind and 120 below the gear centre, and",
+               "  190 below it.",
                "  M8 bolts through cup, spacer and cheek (drill the cheek 9 mm).",
                "Paint bright yellow so the moving gears are marked.",
                "Fit: 11 mm clear of the gear teeth, 3.5 mm round the crank shaft.",
@@ -289,7 +297,8 @@ def sheets():
                "  of and behind the axle, 40 up. Weld, then galvanise.",
                "Roller: UHMW-PE 100 OD x 200 long, 26 mm bore; two UHMW-PE flanges",
                "  160 OD x 10 bolted or pressed on the ends.",
-               "Axle: stainless 316, 25 mm, 260 long, R-clip holes 8 from each end.",
+               "Axle: stainless 316, 25 mm, 272 long, 6.6 mm split pin holes 6",
+               "  from each end, outside the side plates.",
                "The saddle sits astride the bund crest with the rope over the roller,",
                "  so the rope never cuts the bund. Roller top 150 above the crest.",
                "Fit: 5 mm clear between the flanges and the side plates.",
@@ -412,7 +421,7 @@ def joints():
     J(6, [part("Crank hub and arm", win(CRANK_R, 300, 360, -60, 200, pz - 60, pz + 300), "cranks"),
           part("Crank shaft end", win(CAP["pinion"].shape, 290, 350, -20, 20, pz - 20, pz + 20), "pinion"),
           part("Guard face", win(CAP["guard"].shape, 290, 305, -80, 80, pz - 80, pz + 60), "guard")],
-      "Joint 6: crank hub on the shaft end", "8 mm cross pin and R-clip through hub and shaft; remove before paying out under load",
+      "Joint 6: crank hub on the shaft end", "8 mm cross pin and split pin through hub and shaft; remove before paying out under load",
       elev=20, azim=-40)
     ey, ez = P["ear"][0], P["ear"][1]
     J(7, [part("Ear on the cheek", win(fr, 190, 220, ey - 60, ey + 50, ez - 50, ez + 50), "frame_r"),
@@ -439,7 +448,7 @@ def joints():
     roll = RO["roller"].shape
     J(11, [part("Side plate (saddle)", RO["saddle"].shape, "saddle"), part("Roller with flanges", roll, "roller"),
            part("Axle, 25 mm stainless", RO["axle"].shape, "axle")],
-       "Joint 11: roller on its axle in the saddle", "Cut through the axle; 5 mm between each flange and its side plate; R-clips outside",
+       "Joint 11: roller on its axle in the saddle", "Cut through the axle; 5 mm between each flange and its side plate; split pins outside",
        cut="+Y", elev=20, azim=-40)
     return out
 
@@ -474,7 +483,7 @@ def steps():
     base5 = base4 + [g("Ratchet wheel", CAP["ratchet"].shape), g("Gear", CAP["gear"].shape)]
     st(6, base5, [mv("Crank shaft bearings (2)", BRG_PR + BRG_PL, "bearings", (0, 0, 220)),
                   mv("Crank shaft and pinion", CAP["pinion"].shape, "pinion", (650, 0, 0))],
-       "crank shaft bearings, crank shaft and pinion", "Bolt the 25 mm bearings on; slide the shaft in from the right; key the pinion in mesh", elev=22, azim=-40)
+       "crank shaft bearings, crank shaft and pinion", "Bolt the 30 mm bearings on; slide the shaft in from the right; key the pinion in mesh", elev=22, azim=-40)
     base6 = base5 + [g("Crank shaft", CAP["pinion"].shape + BRG_PR + BRG_PL)]
     st(7, base6, [mv("Pawl and pivot bolt", CAP["pawl"].shape, "pawl", (-300, 0, 0))],
        "pawl onto its boss", "M24 bolt through pawl, boss and cheek; nyloc nut inside; hook on the spring", elev=18, azim=-130)
@@ -486,7 +495,7 @@ def steps():
        "gear guard over the gears", "Three spacers and M8 bolts into the right cheek", elev=22, azim=-40)
     base9 = base8 + [g("Gear guard", CAP["guard"].shape)]
     st(10, base9, [mv("Crank handles (2)", CRANK_R, "cranks", (250, 0, 0)), mv("Left crank handle", CRANK_L, "cranks", (-250, 0, 0))],
-       "crank handles on", "Handles 180 deg apart; cross pin and R-clip each", elev=22, azim=-40)
+       "crank handles on", "Handles 180 deg apart; cross pin and split pin each", elev=22, azim=-40)
     base10 = base9 + [g("Crank handles", CAP["cranks"].shape)]
     st(11, base10, [mv("Pull rope, first layer", rope_on_drum(1) + rope_tail(), "rope", (0, -400, 0))],
        "rope onto the drum", "Plain end through the flange hole, knotted inside; wind on tight, even layers over the top", elev=22, azim=-40)
@@ -503,7 +512,7 @@ def steps():
     # roller
     st(15, [part("Saddle", RO["saddle"].shape, "saddle")],
        [mv("Roller and axle", RO["roller"].shape + RO["axle"].shape, "roller", (0, 0, 300))],
-       "roller into its saddle", "Hold the roller between the side plates, push the axle through, R-clips both ends", elev=25, azim=-40)
+       "roller into its saddle", "Hold the roller between the side plates, push the axle through, split pins both ends", elev=25, azim=-40)
     # site
     L = layout(P)
     near_cap = [s for k, (c, s) in L.items() if k.startswith("near_") and c.bom not in (11, 12)]

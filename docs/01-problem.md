@@ -3,9 +3,9 @@ doc_id: SDG-PRB-001
 title: SaltDrag problem statement
 project: SaltDrag
 doc_type: Problem statement
-version: "0.2"
+version: '0.4'
 status: Draft
-date: '2026-10-03'
+date: '2026-10-25'
 author: Amish Chadha
 license: CERN-OHL-S-2.0
 revisions:
@@ -17,6 +17,14 @@ revisions:
   date: '2026-10-03'
   author: Amish Chadha
   change: TRL 2 update; site assumptions made explicit, co-design checklist, safety section, open questions answered where the TRL 3 work settles them (SDG-DDR-001)
+- version: "0.3"
+  date: '2026-10-24'
+  author: Amish Chadha
+  change: Kit 1.8 upgrade; users-and-needs and stakeholder tables (the sources of SDG-URS-001); forest department access conditions as reported in 2023; one set serves one family pan (SDG-DEC-001 D20)
+- version: '0.4'
+  date: '2026-10-25'
+  author: Amish Chadha
+  change: 'Sets per pan: one set per pan kept as the design case (SDG-DEC-001 D25, decided by Amish 2026-10-25)'
 ---
 
 # SaltDrag problem statement
@@ -31,12 +39,30 @@ The preliminary IP screen found expired and active patents for salt harvesters a
 
 ## Users and context
 
-| User | Need | Context |
+### Users and needs
+
+Table 1. Users and needs (the source of the user requirements in SDG-URS-001).
+
+| User type | Goals and needs | Typical use scenario | Pain points and challenges |
+| --- | --- | --- | --- |
+| Agariya salt-making families | Gather the crystallised salt with less time inside the pan and less direct handling; keep the floor and the crystals intact; carry the kit between pans; keep up the pace of the harvest | A family crew of about four works one pan in the March to April harvest, in the cooler hours, and moves to the next strip every 25 minutes or so | Months of work in brine, heat and glare; injuries from handling salt; labour is the family itself, so extra hands cost money |
+| Women salt workers | A tool that does not need great upper-body strength and can be worked from the bund, at a pace that can be kept up through a session | Shared family labour in the pans; cranking or hauling in pairs | Heat stress; protective gear reaches them through NGOs, not employers |
+| Producer groups and NGOs | A shareable, repairable kit they can fund, cost and train people on, with a clear safety case | Clusters of pans; existing solar pump and livelihood programmes; a pilot with a few families | Small budgets; need evidence that a tool saves time before scaling it |
+| Local fabricators | Drawings they can build from steel plate, hollow section, round bar, plastic sheet and bought gears, bearings and rope | Workshops in towns around the Rann (Gandhidham, Dhrangadhra, Kharaghoda) | No CNC; galvanising and gear cutting are bought in; repairs in the season must be quick |
+
+### Stakeholders
+
+Table 2. Stakeholders.
+
+| Stakeholder group | Role or interest | Engagement needed |
 | --- | --- | --- |
-| Agariya salt-making families | Gather salt with less time inside the pan and less direct handling | Family pans in the Little Rann during the March to April harvest |
-| Women salt workers | A tool that does not need great upper-body strength and can be worked from the bund | Shared family labour in the pans |
-| Producer groups and NGOs | A shareable, repairable kit they can fund and train people on | Clusters of pans; existing solar pump programmes |
-| Local fabricators | Drawings they can build from steel pipe, rope and bearings | Workshops in towns around the Rann |
+| Gujarat Forest Department (Wild Ass Sanctuary) | Issues the yearly access cards whose conditions bar heavy machinery and limit what Agariyas may bring into the Rann; reported in 2023 to allow only the machines and technology in use in the 2004 to 2005 baseline year ([Mongabay India, 2023](https://india.mongabay.com/2023/10/role-of-traditional-salt-workers-in-wild-ass-conservation-recognised-get-back-access-to-little-rann-of-kutch/)) | Written confirmation, through the partner, that a hand capstan is allowed before any trial (SDG-DDR-001, D16; SDG-REG-001) |
+| Co-design partner (first candidate: SEWA) | Hosts trials inside an existing trust relationship; shapes the tool with the people who will wind it | Agree trial pans, families, work hours and the measurements of the co-design checklist below |
+| Salt traders and refiners | Buy the salt; may set crystal size and cleanliness | Check that gathered salt meets their grade (crystal damage, contamination) |
+| Salt Commissioner's Organisation and Gujarat government | Salt land, licensing and welfare schemes for salt workers | Inform; possible route to funding sets |
+| Funders of livelihood programmes | Pay for pilots and sets | A costed BOM, a safety case and trial results |
+
+The design case is a family pan worked by a crew of four. One set gathers about 195 t in a harvest, about a third of what one pan yields in a year (SDG-CAL-001 [D11]), so one set serves one family pan; whether a family needs more than one set, or a longer season of work, is a question for the partner; Amish decided on 2026-10-25 to keep one set per pan as the design case until the partner answers (SDG-DEC-001 D25).
 
 ## Operating environment
 

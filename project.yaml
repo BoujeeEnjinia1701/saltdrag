@@ -6,16 +6,37 @@ area: Food and water security
 trl: 3                   # Technology Readiness Level, see .kit/STANDARDS.md section 9
 trl_target: 3
 design_state: constructable   # concept or constructable, see .kit/STANDARDS.md section 18
+stage: P3                # pipeline stage, STANDARDS section 19; P3 reached 2026-10-24 (kit 1.9.1 upgrade)
+stem_check: open         # SDG-STM-001: 25 of 31 option A rows within known science; S1, S7, S12, S16, S19, S27 need field data or a test (TRL 4)
+concept_options: [A, B, C]   # SDG-OPT-001: A geared drum capstans 158, B bund-walk haul 148, C lever rope puller 154
+# concept_chosen: unset; the three options score within 10 %, so all go to Amish (SDG-DDR-003); the repo stays on option A meanwhile
 trl_evidence:
   - docs/01-problem.md
   - docs/02-concept.md
   - docs/03-requirements.md
   - docs/decisions/0001-trl2-review-decisions.md
   - docs/decisions/0002-design-for-construction.md
+  - docs/decisions/0003-concept-selection.md
+  - docs/01b-stem-check.md
+  - docs/02a-concept-options.md
+  - docs/03a-user-requirements.md
+  - docs/03b-traceability.md
+  - docs/04-calcs/stem_check.py
+  - docs/04-calcs/stem_results.csv
+  - docs/07-regulatory.md
+  - docs/08-feasibility.md
+  - docs/09-risk.md
+  - docs/10-market.md
+  - docs/11-plan.md
   - docs/04-calcs/01-sizing.md
   - docs/04-calcs/sizing.py
   - docs/04-calcs/results.csv
   - cad/src/model.py
+  - cad/src/sdg_parts.py
+  - cad/fidelity.json
+  - cad/step/A-assembly.step
+  - cad/step/B-assembly.step
+  - cad/step/C-assembly.step
   - cad/step/saltdrag-assembly.step
   - cad/step/saltdrag-capstan.step
   - cad/step/saltdrag-rake.step

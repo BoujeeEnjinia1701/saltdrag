@@ -1,4 +1,4 @@
-"""SaltDrag general arrangement sheet SDG-DWG-001, Rev P2 (TRL 3, constructable design SDG-DDR-002).
+"""SaltDrag general arrangement sheet SDG-DWG-001, Rev P3 (TRL 3, constructable design SDG-DDR-002, fixes SDG-DEC-001 D17 to D24).
 
 Run from the repo root:  python cad/src/sheets.py
 Writes cad/drawings/SDG-DWG-001.svg, .pdf and .png from cad/src/model.py with .kit/drawing.py.
@@ -52,11 +52,12 @@ def main():
     work = ROOT / "cad" / "drawings" / "_views"
     views = project_views(cap, work)
     bb = cap.bounding_box()
-    s = Sheet(project="SaltDrag", title="Hand capstan and rake set: general arrangement", dwg_no="SDG-DWG-001", rev="P2",
+    s = Sheet(project="SaltDrag", title="Hand capstan and rake set: general arrangement", dwg_no="SDG-DWG-001", rev="P3",
               author="Amish Chadha", date=DATE_P1, scale=None, theme="technical",
               material="Galvanised steel capstan; FRP and UHMW-PE rake; per bom/bom.csv. PRELIMINARY, NOT FOR FABRICATION",
               revisions=[("P1", "Preliminary GA for TRL 3 (from cad/src/model.py)", DATE_P1, "AC"),
-                         ("P2", "SDG-DDR-002: design for construction", DATE_P1, "AC")])
+                         ("P2", "SDG-DDR-002: design for construction", DATE_P1, "AC"),
+                         ("P3", "SDG-DEC-001 D17 to D24: STEM check fixes, kit 1.9.1", "2026-10-24", "AC")])
     s.add_ortho(views)
     k = s.scale
     c = ortho_cells(s, views)
@@ -84,7 +85,7 @@ def main():
         f"Gear pair module 4, 84 and 14 teeth, ratio {D['ratio']:.0f}:1, centres {D['cd']:.0f}",
         f"Drum barrel {m['barrel'][0]} OD x {m['barrel'][2]:.0f}; flanges {m['flange'][0]:.0f}; shaft {m['dshaft'][0]:.0f} C45",
         f"Rope 12 polyester; {D['layers'][3][2]:.0f} m in 4 layers; freeboard {D['freeboard']:.0f}",
-        f"Bearings 4-bolt flange, 40 and 25 bore, stainless insert",
+        f"Bearings 4-bolt flange, 40 and 30 bore, stainless insert",
         f"Ratchet 200 OD, 20 teeth; pawl on 40 boss; band brake on 330 rim",
         f"Side frames 6 plate on 40 SHS runners {m['runner'][3] - m['runner'][2]:.0f} long, {2 * m['cheek_x']:.0f} apart",
         f"Anchors: 2 chains from ears to helical anchors {m['anchor_eye'][0]:.0f} behind",
